@@ -83,10 +83,7 @@ function ThemeToggle() {
       if (s) return s;
     } catch (e) {}
 
-    return window.matchMedia &&
-      matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    return "light";
   });
 
   useEffect(() => {
